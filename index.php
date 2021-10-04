@@ -1,5 +1,5 @@
 <!-- <?php
-echo "Hello LINE BOT";
+// echo "Hello LINE BOT";
  -->
    
 <?php
@@ -12,5 +12,7 @@ $httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient($access_token);
 $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => $channelSecret]);
 $textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder('hello world ทดสอบ');
 $response = $bot->pushMessage($idPush, $textMessageBuilder);
+
+echo "Hello LINE BOT Developer";
 
 echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
