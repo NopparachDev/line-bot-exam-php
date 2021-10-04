@@ -16,3 +16,5 @@ $response = $bot->pushMessage($idPush, $textMessageBuilder);
 echo "Hello LINE BOT Developer";
 
 echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
+
+>
